@@ -1,0 +1,29 @@
+.Bot-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Bot-button:hover {
+  cursor: pointer;
+}
+
+.Bot-button-text {
+  color: #EEE;
+  font-size: 40px;
+}
+
+.Bot-button-arrow {
+  width: 30px;
+  height: 60px;
+}
+
+.Bot-button-arrow path {
+  stroke: #EEE;
+  stroke-width: 1;
+  fill: transparent;
+  transition: stroke-width 0.25s;
+}
+
+.Bot-button:hover path {
+  stroke-width: 3;
+}

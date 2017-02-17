@@ -1,0 +1,38 @@
+.Contact-drawer {
+  z-index: 10;
+  position: fixed;
+  bottom: 75px;
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F57F17;
+  padding: 30px;
+
+  transition: bottom 0.5s;
+}
+.Contact-drawer-closed {
+  bottom: -400px;
+}
+
+.Contact-sent{
+  flex-basis: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+.to-clipboard {
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.to-clipboard:hover {
+  cursor: pointer;
+}
+.copycheck {
+  color: green;
+}

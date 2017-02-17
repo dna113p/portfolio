@@ -1,0 +1,12 @@
+.Signature {
+  width: 25%;
+  padding-bottom: 17%;
+  padding-left: 2%;
+}
+.Sig-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

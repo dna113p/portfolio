@@ -1,0 +1,7 @@
+.ProjectsPage {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}

@@ -1,0 +1,76 @@
+.Contact-form {
+  height: 100%;
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Contact-form textarea{
+  flex-grow: 1;
+  padding:5px;
+  margin-bottom: 5px;
+  resize: none;
+  font-family: 'Lato';
+  font-size: 18px;
+  border: none;
+}
+.Contact-form input{
+  font-family: 'Lato';
+  padding:5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  border: none;
+}
+.Contact-form button{
+  height: 50px;
+  width: 100px;
+  font-family: 'Lato';
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: #222;
+  color: #EEE;
+}
+.Contact-form button:hover {
+  color: #F57F17;
+}
+
+.Contact-form-status {
+  height:50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.to-clipboard {
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.to-clipboard:hover {
+  cursor: pointer;
+}
+.copycheck {
+  color: green;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
