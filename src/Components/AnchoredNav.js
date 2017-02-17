@@ -31,7 +31,7 @@ class AnchoredNav extends Component {
   render() {
     let classes = classNames({
       'Anchored-nav': true,
-      'expanded' : this.props.expanded,
+      'expanded' : this.props.expanded | this.state.drawerOpen,
     });
 
     let toggleDrawer =classNames({
