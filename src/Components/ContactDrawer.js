@@ -12,6 +12,12 @@ class ContactDrawer extends Component {
       clipboarded: false,
       messageSent: false
     };
+    this.messageSent = this.messageSent.bind(this);
+  }
+
+  messageSent() {
+    this.setState({messageSent:true});
+    setTimeout(this.props.closeDrawer , 1000);
   }
 
   render() {
@@ -24,7 +30,7 @@ class ContactDrawer extends Component {
       <div className={drawerClass}>
         {this.state.messageSent ?
             <h1 className="Contact-sent" >Message Sent!</h1>:
-            <ContactForm setMessage={() => this.setState({messageSent:true})}/>}
+            <ContactForm setMessage={this.messageSent}/>}
         <h1 className="seperator">-or-</h1>
         <CopyToClipboard text="djpelland@gmail" onCopy={()=>this.setState({clipboarded: true})}>
           <div className="to-clipboard">

@@ -22,7 +22,6 @@ class PerspectiveScene extends Component {
 
   componentDidMount() {
     document.addEventListener('mousemove', this.handlePerspective)
-    window.addEventListener('deviceorientation', this.handlePerspective)
   }
 
   //Update state based on mouse position or device orientation

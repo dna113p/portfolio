@@ -13,6 +13,7 @@ class AnchoredNav extends Component {
       drawerOpen: false
     };
     this.toggleDrawer = this.toggleDrawer.bind(this);
+    this.closeDrawer = this.closeDrawer.bind(this);
   }
 
   toggleDrawer() {
@@ -20,6 +21,10 @@ class AnchoredNav extends Component {
     this.setState({
       drawerOpen: val
     });
+  }
+
+  closeDrawer() {
+    this.setState({drawerOpen:false});
   }
 
   mobileCheck() {
@@ -46,7 +51,7 @@ class AnchoredNav extends Component {
     return (
 
       <div className={classes} >
-        <ContactDrawer open={this.state.drawerOpen} />
+        <ContactDrawer open={this.state.drawerOpen} closeDrawer={this.closeDrawer}/>
         <div className="Anchored-nav-inner">
 
           {this.mobileCheck() ?
